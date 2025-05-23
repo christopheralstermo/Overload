@@ -2,12 +2,16 @@ namespace Overload;
 
 public class OverloadClass
 {
-    private string name;
-    private int age;
-
-    public OverloadClass(string name, int age)
+    public void Greetings(string inputten = "du er helt ålreit...")
     {
-        this.name = name;
-        this.age = age;
+        Console.WriteLine($"Ikke bare eru grei, {inputten}");
+    }    
+    public void Greetings(string inputten, string inputten2)
+    {
+        Console.WriteLine($"Ikke bare eru grei, {inputten} og {inputten2}");
+    }
+    public void Greetings(string inputten, string inputten2, string inputten3)
+    {
+        Console.WriteLine($"Ikke bare eru grei, {inputten} og {inputten2} og enda en {inputten3}");
     }
 }
